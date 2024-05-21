@@ -10,9 +10,5 @@ public class Color {
 	public uint B { get; set; }
 
 	/// <summary> Creates a new Color from rgb. </summary>
-	public Color( int r , int g , int b ) {
-		this.R = (uint)r;
-		this.G = (uint)g;
-		this.B = (uint)b;
-	}
+	public Color(int r, int g, int b) => (R,G,B) = ((uint)r, (uint)g, (uint)b);
 }
