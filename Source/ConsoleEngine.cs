@@ -610,7 +610,7 @@ public class ConsoleEngine {
 					(int)Math.Floor(( ( p.Y - r.Top ) / (float)FontSize.Y ))
 				);
 			}
-			return new Point(Utility.Clamp(point.X , 0 , WindowSize.X - 1) , Utility.Clamp(point.Y , 0 , WindowSize.Y - 1));
+			return new Point(Math.Clamp(point.X, 0, WindowSize.X - 1) , Math.Clamp(point.Y, 0, WindowSize .Y - 1));
 		}
 		throw new Exception();
 	}
