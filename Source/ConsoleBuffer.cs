@@ -44,7 +44,6 @@ class ConsoleBuffer {
 			}
 		}
 	}
-#pragma warning restore CS1572 // XML comment has a param tag, but there is no parameter by that name
 
 	public bool Blit( ) {
 		NativeMethods.SmallRect rect = new NativeMethods.SmallRect() { Left = 0 , Top = 0 , Right = (short)width , Bottom = (short)height };
